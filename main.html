@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dine | Fine Dining Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'LEMON MILK', monospace;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        p.lead {
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('restaurant-hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        #hero h2 {
+            color: #000000;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        #hero a.btn {
+            font-size: 1.2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #ff5a00;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #hero a.btn:hover {
+            background-color: #ff8c00;
+        }
+
+        /* Booking Section */
+        #booking {
+            background-color: #343a40; /* Dark background */
+            padding: 60px 0; /* Vertical padding */
+            text-align: center; /* Center text */
+        }
+
+        #booking h2 {
+            color: #ff5a00; /* Highlighted color for the heading */
+            margin-bottom: 1rem; /* Spacing below the heading */
+        }
+
+        #booking p {
+            color: #fff; /* White color for the paragraph */
+            font-size: 1.2rem; /* Font size for lead paragraph */
+            margin-bottom: 2rem; /* Spacing below the paragraph */
+        }
+
+        #booking a.btn {
+            font-size: 1.2rem; /* Font size for button */
+            padding: 0.75rem 1.5rem; /* Button padding */
+            background-color: #ff5a00; /* Button color */
+            border-radius: 5px; /* Rounded corners for button */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        #booking a.btn:hover {
+            background-color: #ff8c00; /* Lighter orange on hover */
+        }
+
+        /* Social Media Icons */
+        .footer-social {
+            margin-left: auto;
+            margin-top: 1rem; /* Increase spacing above the social icons */
+            margin-bottom: 0; /* Remove bottom margin */
+            text-align: center; /* Center the icons */
+        }
+
+        .footer-social .list-inline-item {
+            margin-right: 15px; /* Space between icons */
+        }
+
+        .footer-social i {
+            font-size: 1.5rem; /* Icon size */
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        /* Logo Adjustment */
+        .navbar-brand img {
+            height: 130px; /* Height of the logo */
+            margin-top: -300px; /* Negative margin to move the logo up */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        /* Additional navbar styles (if needed) */
+        .navbar {
+            padding: 0.5rem 1rem; /* Adjust navbar padding */
+        }
+
+        .footer-social a:hover i {
+            color: #ff5a00; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center p-4">
+        <h1>Welcome to Smart Dine</h1>
+        <p>Your favorite fine dining restaurant</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src=" " alt="Smart Dine">
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="btn btn-outline-light me-2" href="registration.php">Register</a></li>
+                <li class="nav-item"><a class="btn btn-outline-light me-2" href="login.php">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2 class="display-4">Delicious Meals, Exquisite Ambiance</h2>
+            <p class="lead">Experience world-class dining with a variety of dishes from around the world.</p>
+            <a href="#booking" class="btn btn-primary btn-lg">Book Your Table Now</a>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu" class="mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Signature Dishes</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="https://www.halfbakedharvest.com/wp-content/uploads/2019/05/Honey-Mustard-Grilled-Salmon-with-Avocado-Basil-Sauce-1.jpg" alt="Dish 1" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+                    <h4>Grilled Salmon</h4>
+                    <p>Fresh Atlantic salmon, grilled to perfection.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://joyfoodsunshine.com/wp-content/uploads/2021/04/pasta-primavera-recipe-1x1-1.jpg" alt="Dish 2" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+                    <h4>Pasta Primavera</h4>
+                    <p>Fresh vegetables with handmade pasta and Italian herbs.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://handletheheat.com/wp-content/uploads/2018/01/Chocolate-Lava-Cakes-SQUARE.png" alt="Dish 3" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>A rich, warm dessert with a molten chocolate center.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Book a Table</h2>
+            <p class="lead">Reserve a table for your special occasion, and enjoy a memorable dining experience.</p>
+            <a href="login.php" class="btn btn-light btn-lg">Reserve Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="mt-5">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">At Smart Dine, we strive to offer an unforgettable dining experience with gourmet meals prepared by world-class chefs in an ambiance of comfort and luxury. Whether you're celebrating a special occasion or just craving something exceptional, Smart Dine is here to serve you the best of culinary delights.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-2"> <!-- Reduced height -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-social">
+                    <h5>Connect With Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://facebook.com" target="_blank" class="text-white">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com" target="_blank" class="text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://instagram.com" target="_blank" class="text-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://youtube.com" target="_blank" class="text-white">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://linkedin.com" target="_blank" class="text-white">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-dark text-white text-center py-2"> <!-- Reduced height -->
+                <p>&copy; 2024 Smart Dine. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
